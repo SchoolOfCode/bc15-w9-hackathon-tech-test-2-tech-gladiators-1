@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import { notesRoute } from "./routes/notesRoutes.mjs";
+import { notesRoute } from "../routes/notesRoutes.mjs";
 
 export const app = express();
 
