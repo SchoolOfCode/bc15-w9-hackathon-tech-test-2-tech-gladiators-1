@@ -1,11 +1,9 @@
-import { pool } from "../database/index.mjs"
+import { pool } from "../database/index.mjs";
 
+export async function getAllFromNotesModel() {
+  const data = await pool.query(`SELECT * FROM notes`);
 
-export async function getAllFromNotes(){
+  console.log(data.rows);
 
-const data  = await pool.query(`SELECT * FROM notes`)
-
-console.log(data.rows)
-
-    return data.rows || null
+  return data.rows || null;
 }
