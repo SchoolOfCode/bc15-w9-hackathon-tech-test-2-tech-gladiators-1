@@ -4,8 +4,8 @@
   "description": "Feel free to delete this and start from scratch.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "db-reset": "node -r dotenv/config database/scripts/db-reset.mjs"
   },
   "keywords": [],
   "author": "",
