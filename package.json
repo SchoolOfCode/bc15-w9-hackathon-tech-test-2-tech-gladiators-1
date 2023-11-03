@@ -4,7 +4,7 @@
   "description": "Feel free to delete this and start from scratch.",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.mjs",
     "db-reset": "node -r dotenv/config database/scripts/db-reset.mjs",
     "dev": "nodemon server.mjs"
   },
